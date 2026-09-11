@@ -1,0 +1,1077 @@
+{
+  "model": "Rule-based escalation",
+  "evaluation_examples": 150,
+  "accuracy": 0.9333,
+  "escalation_precision": 0.5,
+  "escalation_recall": 0.2,
+  "escalation_f1": 0.2857,
+  "confusion_matrix": {
+    "labels": [
+      "auto_handle",
+      "escalate"
+    ],
+    "matrix": [
+      [
+        138,
+        2
+      ],
+      [
+        8,
+        2
+      ]
+    ]
+  },
+  "evaluation_warning": "Expected escalation labels are proxy labels derived from intent categories. They are NOT independently human-labelled escalation ground truth.",
+  "examples": [
+    {
+      "customer_text": "@AppleSupport Yes it is. Every time I try to start a new route it doesn’t go through the route calculation, ending with a request timeout",
+      "intent": "app_service_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.354."
+    },
+    {
+      "customer_text": "@AppleSupport do you know when the Apple TV app/Apple TV iOS will be available outside of the US? (esp UK) - I heard it would be finally available around this time?",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.415."
+    },
+    {
+      "customer_text": "Can't send emails from my regular @133941 account on iOS. SMTP error. Remove account, add account, still doesn't work. @AppleSupport",
+      "intent": "app_service_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.316."
+    },
+    {
+      "customer_text": "Hey @AppleSupport the iOS update messed up my iPhone 7. Calls don’t work and phone freezes up. I’d like the IPhone X as a replacement, thnx.",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.324."
+    },
+    {
+      "customer_text": "@AppleSupport downloaded 11.0.3 and now my 7 is all buggy and I’m still leasing it. No thanks. This will be my last @115858 product.",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.478."
+    },
+    {
+      "customer_text": "@AppleSupport Please fix the problem in the iOS 11 versions that cause phones to freeze! Having to do too many hard restarts!",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.344."
+    },
+    {
+      "customer_text": "@AppleSupport fix your software the letter “I️” appearing as boxes fix this shit",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.596."
+    },
+    {
+      "customer_text": ". @AppleSupport you need to work on this bug, it’s a real self-esteem killer https://t.co/iwv0acDzuH",
+      "intent": "app_service_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.354."
+    },
+    {
+      "customer_text": "@AppleSupport hi, people can’t hear me unless I put it on speaker. Can you please help me",
+      "intent": "device_hardware_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.382."
+    },
+    {
+      "customer_text": "I updated my phone and I️ still get that box instead of the letter “I️” What the fuck is up @AppleSupport ???",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.413."
+    },
+    {
+      "customer_text": "@115858 why is it I can’t delete my credit card off my phone? I have a big issue with this",
+      "intent": "billing_refund",
+      "expected_decision": "escalate",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.384."
+    },
+    {
+      "customer_text": "@AppleSupport why exactly is my phone replacing the letter I with weird symbol things ?",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.536."
+    },
+    {
+      "customer_text": "@AppleSupport I connected it after restarting my iPhone twice, but it did not get better. My lightning cable is new one.",
+      "intent": "device_hardware_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.410."
+    },
+    {
+      "customer_text": "@AppleSupport no spotlight function on IOS 11.0.3. This is used on a daily basis, now this function is no more and seemed very crippling.",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.336."
+    },
+    {
+      "customer_text": "@AppleSupport needs to fix this glitch with this upgrade. Smh",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.739."
+    },
+    {
+      "customer_text": "@115858 fix this symbol BS immediately",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.543."
+    },
+    {
+      "customer_text": "@AppleSupport I think the #greenline suits my new #iPhoneX. What do I do now? https://t.co/OdBO7lh9J5",
+      "intent": "device_hardware_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.539."
+    },
+    {
+      "customer_text": "@AppleSupport photos deleted unexpectedly and phone is now stuck into restore mode but phone is unable to restore error code 6.",
+      "intent": "device_hardware_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.403."
+    },
+    {
+      "customer_text": "@AppleSupport Hi, i have problem to download application from the app store. Can you help?",
+      "intent": "app_store_purchase",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.407."
+    },
+    {
+      "customer_text": "@AppleSupport can you advise if this is fake? https://t.co/HURnabdVCf",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.577."
+    },
+    {
+      "customer_text": "@AppleSupport Any reason songs that are the same volume on phone would have wildly different volumes when played from a 1st gen watch? Fixed in series 3?",
+      "intent": "app_service_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.324."
+    },
+    {
+      "customer_text": "@AppleSupport I requested an account recover on Sunday. How long does this take exactly?",
+      "intent": "apple_id_account",
+      "expected_decision": "escalate",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.480."
+    },
+    {
+      "customer_text": "hey @115858 why did this update fuck up my phone? i️ can’t type i️ think anymore bc it just corrects to a stupid “A [question box]”",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.291."
+    },
+    {
+      "customer_text": "IOS vai atualizar mais não ? Meus bug continua viu @115858",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.304."
+    },
+    {
+      "customer_text": "@AppleSupport my late 2012 MBP 15” retina laptop keeps shutting down at about 30% battery and won’t re-start saying no battery remaining",
+      "intent": "battery_power_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.254."
+    },
+    {
+      "customer_text": "@AppleSupport well, now i’m having problems with battery life and charging. What is going on with the battery and the iOS11(xxxxx) updates?",
+      "intent": "battery_power_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.426."
+    },
+    {
+      "customer_text": "Until this ios11 glitch is fixed. @115858 we sending our bills to you 😂",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.458."
+    },
+    {
+      "customer_text": "@AppleSupport IOS 11 is draining out my IPhone 7 battery! Are you doing something about it?\r\nToo many malfunctions!",
+      "intent": "battery_power_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.753."
+    },
+    {
+      "customer_text": "ok @115858 @115858 @115858 @115858 WHY DID YOU TRY TO BURN MY CAR DOWN. Please explain. https://t.co/4ncP4xIiux",
+      "intent": "device_hardware_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.547."
+    },
+    {
+      "customer_text": "@AppleSupport i purchased an iphone 8+ yesterday and my contacts appeared on my new phone after I entered my apple i.d. this a new feature?",
+      "intent": "icloud_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.370."
+    },
+    {
+      "customer_text": "@AppleSupport Yes installed the 11.0.2",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.597."
+    },
+    {
+      "customer_text": "I can’t send photos any more with the new iOS. Any thoughts @AppleSupport?",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.321."
+    },
+    {
+      "customer_text": "@AppleSupport No, the third screen shot attached is actually the first taken. You can try the same steps on iPhone 6.",
+      "intent": "connectivity_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.509."
+    },
+    {
+      "customer_text": "@AppleSupport hi Apple. Why does the clock on my lock screen disappear on my new iPhone 7? https://t.co/VKKKOr4ka8",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.448."
+    },
+    {
+      "customer_text": "Ugh @115858 whats going on with you? 4yrs &amp; never an issue w/iOS. I update to iOS11.1 &amp; my phone keeps rebooting. Black screen w/spinning :/",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.822."
+    },
+    {
+      "customer_text": "@AppleSupport when y’all gonna fix this “I️” shit?!?!",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 1.000."
+    },
+    {
+      "customer_text": "@115948 @115858 @AppleSupport",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.893."
+    },
+    {
+      "customer_text": "@AppleSupport why is this happening on my new MacBook Pro? https://t.co/ptmW2mO6yJ",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.593."
+    },
+    {
+      "customer_text": "@AppleSupport Checked \"Calculate All Sizes\" in Finder, but my large files read Zero Bytes. This isn't helpful. Is there a way to show size?",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.363."
+    },
+    {
+      "customer_text": "@115858 the FIFA app is not working with your latest update.  Please fix. https://t.co/qWbJJRvvJx",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.397."
+    },
+    {
+      "customer_text": "@AppleSupport need some help please! My iPhone &amp; iPad sync pics but now this is happening on my iPad . What can I do? https://t.co/yaehWh3BUL",
+      "intent": "icloud_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.532."
+    },
+    {
+      "customer_text": "@AppleSupport Hey how much time is expected to raise the application on the store App Store",
+      "intent": "app_store_purchase",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.401."
+    },
+    {
+      "customer_text": "@AppleSupport 11.0.3 ever since it updated. It’s ridiculous.",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.739."
+    },
+    {
+      "customer_text": "@AppleSupport I’m need for everyone at  that’s over iOS 11.1 to fix this bug issue that’s going on ASAP ! This is ridiculous🤦🏾‍♂️",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.455."
+    },
+    {
+      "customer_text": "|| That autocorrect shit will be the death of me. Fucking hate it with a fucking passion. @AppleSupport, I’m tired of making update after update to only keep finding bugs. i also hate that it requires WiFi. I need y’all to reimburse my month’s pay of service to T-mobile.",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.271."
+    },
+    {
+      "customer_text": "Apparently @115858's been charging me for apps that aren't even on my phone 😩",
+      "intent": "billing_refund",
+      "expected_decision": "escalate",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.299."
+    },
+    {
+      "customer_text": "@AppleSupport iPhone 6s has no cellular! Antenna issue? Any options other than replacing? Phone is only a year old!",
+      "intent": "connectivity_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.357."
+    },
+    {
+      "customer_text": "Alright @115858 time to fix this dumbass glitch with the I's when I️ type.",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.619."
+    },
+    {
+      "customer_text": "@AppleSupport the screen/data turned on; no matter what I'd be doing, the battery doesn't behave as it used to do on iOS 10",
+      "intent": "battery_power_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.244."
+    },
+    {
+      "customer_text": "@AppleSupport what’s up with this “I️” issue. It’s annoying",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.718."
+    },
+    {
+      "customer_text": "when is @115858 gonna fix this I️ shit??",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 1.000."
+    },
+    {
+      "customer_text": ". @115858 online chat not working, call in and it hangs up on you. I want to fix the incorrect shipping address! You're killing me smalls.",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.308."
+    },
+    {
+      "customer_text": "@AppleSupport @644987 My MAC had been updating for 22 hours...then crashed",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.604."
+    },
+    {
+      "customer_text": "@AppleSupport yes never like this before.",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.681."
+    },
+    {
+      "customer_text": "Awesome @115858 I have a 1200 FUCKING PAPER WEIGHT AND YOU FUCKS CANT DO ANYTHING ABOUT IT!!!",
+      "intent": "device_hardware_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.473."
+    },
+    {
+      "customer_text": "@AppleSupport terrible battery life cos of your ios 11 &amp; following updates!u still haven’t rectified the common complaint, moving to Android",
+      "intent": "battery_power_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "escalate",
+      "reason": "High-risk issue detected. Matched keyword(s): complaint."
+    },
+    {
+      "customer_text": "@AppleSupport The steps show me how to delete the profile, which I already did. It’s still showing an update for beta",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.436."
+    },
+    {
+      "customer_text": "My iPhone battery is seriously tripping. Haven't even touched it and it somehow has drained 60% of it's battery life. Help me @115858.",
+      "intent": "battery_power_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.369."
+    },
+    {
+      "customer_text": "@AppleSupport I have paypal set as my payment method so why does this pop up?? https://t.co/OokV4CkFI4",
+      "intent": "billing_refund",
+      "expected_decision": "escalate",
+      "predicted_decision": "escalate",
+      "reason": "High-risk issue detected. Matched keyword(s): payment."
+    },
+    {
+      "customer_text": "@AppleSupport plz tell me why I can’t buy a iPhone X on ur website with T-Mobile.....now I have to wait longer",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.393."
+    },
+    {
+      "customer_text": "@AppleSupport Yes..still battery runs out too quickly",
+      "intent": "battery_power_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.599."
+    },
+    {
+      "customer_text": "@AppleSupport It’s just my home screen that changes, when no apps are open or in background",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.650."
+    },
+    {
+      "customer_text": "fix the letter i @AppleSupport",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.740."
+    },
+    {
+      "customer_text": "My iPhone battery drains fast and I’m not sure how to fix it, I have a 5s. @115858 Help!",
+      "intent": "battery_power_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.418."
+    },
+    {
+      "customer_text": "@AppleSupport Can you tell me what this SpringBoard is and why it’s using mobile data? https://t.co/kjwv0MbJAy",
+      "intent": "connectivity_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.491."
+    },
+    {
+      "customer_text": "@AppleSupport what gives?! Constantly I have songs downloaded to my phone and added to a play list then they simply disappear and have to download again?!! https://t.co/JNUIuNFMZJ",
+      "intent": "app_service_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.325."
+    },
+    {
+      "customer_text": "@AppleSupport I updates to 11.1.1 and the speed improved. But i can get multiple apps to drag and drop at the same time. How come?",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.387."
+    },
+    {
+      "customer_text": "@AppleSupport is this a legitimate email or a scam? https://t.co/n8O8xTpOoq",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.590."
+    },
+    {
+      "customer_text": "@AppleSupport I’m trying to send pictures via iMessage after the newest update but none of my photos will fully download from iCloud? It says “unable to share” and that there was an error. Could you help me sort out the problem please?",
+      "intent": "icloud_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.324."
+    },
+    {
+      "customer_text": "@AppleSupport 11.1.2 and the screen flashes black and turns off music or whatever I have going on then the lock screen comes on https://t.co/9uTLFgN2HC",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.294."
+    },
+    {
+      "customer_text": "@AppleSupport Give me some credit! That was the first thing I tried....problem persists",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.446."
+    },
+    {
+      "customer_text": "@AppleSupport I updated my software and I am still unable to see the new emojis. When will you fix this?",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.584."
+    },
+    {
+      "customer_text": "Caroline hates this I️ thing. So Caroline will be speaking in third person about herself until further notice. Also, fuck you @115858",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.564."
+    },
+    {
+      "customer_text": "Will there be another update @115858 soon? It would be nice if my phone could relay all vowels.",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.288."
+    },
+    {
+      "customer_text": "@AppleSupport I had to reboot it in order for it to work again. I can’t even turn off my phone because it’s hanging. Pls pls fix this",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.403."
+    },
+    {
+      "customer_text": "Dear @115858 \r\n\r\nThis phone was too expensive for the damn “i” to be broken. The fuck 😒",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.419."
+    },
+    {
+      "customer_text": "Hey @115858! Love my iPhone X.  Some of my apps are crashing.  How long could these apps take to update to your new technology?",
+      "intent": "app_service_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.365."
+    },
+    {
+      "customer_text": "I left my house at 12  with my phone at 90% and my phone is on 7% @115858 fix ur phones",
+      "intent": "battery_power_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.464."
+    },
+    {
+      "customer_text": "Good God @AppleSupport I️ need an update",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.464."
+    },
+    {
+      "customer_text": "Can you explain this?! @115858 @AppleSupport https://t.co/rQC71MLKnL",
+      "intent": "device_hardware_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 1.000."
+    },
+    {
+      "customer_text": "@AppleSupport (2/2) ... and my battery doesn’t die constantly throughout the day.  In fact, how about offering a roll-back to iOS 10?",
+      "intent": "battery_power_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.365."
+    },
+    {
+      "customer_text": "So freaking tired of my iPhone 6S Plus after upgrading to iOS 11 and using it for months now. My phone’s screen freezes too out of nowhere and randomly taps on-screen buttons. It’s so unusable and frustrating. Fix it ASAP @115858 @AppleSupport",
+      "intent": "device_hardware_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.261."
+    },
+    {
+      "customer_text": "@AppleSupport Thanks for your prompt respond, i manage to update my device. However, i still find sometimes whenever i click, i hardly fire up the apps.",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.484."
+    },
+    {
+      "customer_text": "@AppleSupport @474356 My phone will simply not activate. Went to ATT and got a new sim... nothing. Is the server completely overloaded over there?",
+      "intent": "connectivity_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.261."
+    },
+    {
+      "customer_text": "@AppleSupport why will my phone not connect to find my iPhone or NFL fantasy? But I can text? And twitter? Why does IPhone 7 suck when 8 is?",
+      "intent": "connectivity_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.282."
+    },
+    {
+      "customer_text": "@AppleSupport It’s telling people they don’t have an acct",
+      "intent": "apple_id_account",
+      "expected_decision": "escalate",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.318."
+    },
+    {
+      "customer_text": "@AppleSupport , setting up iPhone X as new mobile under existing Apple ID.  End result: Apple ID got locked out without at anytime mistyping password. Later forced to change password and naturally laptops, all devices need to have password changed as well. WHY?????",
+      "intent": "apple_id_account",
+      "expected_decision": "escalate",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.340."
+    },
+    {
+      "customer_text": "Okay but I wanna know @115858 is going to fix this question mark box bs 🙄",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.459."
+    },
+    {
+      "customer_text": "Ok @115858 — this iPhone text glitch is NOT cute. #FIXIT #UPDATE",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.406."
+    },
+    {
+      "customer_text": "@AppleSupport is there a reason why you guys won’t accept my credit card details?",
+      "intent": "billing_refund",
+      "expected_decision": "escalate",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.415."
+    },
+    {
+      "customer_text": "@AppleSupport I forwarded the email. I’m hoping that my account wasn’t hacked into. I changed my password through that email.",
+      "intent": "apple_id_account",
+      "expected_decision": "escalate",
+      "predicted_decision": "escalate",
+      "reason": "High-risk issue detected. Matched keyword(s): hacked."
+    },
+    {
+      "customer_text": "@AppleSupport @118721 please help me out guys. Link in the invoice receipt is not working for me to report.",
+      "intent": "billing_refund",
+      "expected_decision": "escalate",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.397."
+    },
+    {
+      "customer_text": "@115858 @917 why is the iPhone X Snapchat quality worse than the iPhone 6? Please fix it.",
+      "intent": "app_service_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.566."
+    },
+    {
+      "customer_text": "@AppleSupport Your cyber hub rep (Gurgaon) has sent the phone to Bangalore to diagnose the issue.",
+      "intent": "device_hardware_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.288."
+    },
+    {
+      "customer_text": "@AppleSupport iOS 11.1.2",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 1.000."
+    },
+    {
+      "customer_text": "When @115858 finally comes out with the update to fix the ‘I’ glitch 😭😭",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.385."
+    },
+    {
+      "customer_text": "@AppleSupport if I do a season pass of a show &amp; decide I’m not liking it, can I cancel and get credit for the unreleased episodes?",
+      "intent": "app_store_purchase",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.348."
+    },
+    {
+      "customer_text": "@AppleSupport help? https://t.co/WWfVup8cqG",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 1.000."
+    },
+    {
+      "customer_text": "@AppleSupport Random. I’m running 10.13.1. The computer is about 8 months old. This just started with my last OS update.",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.377."
+    },
+    {
+      "customer_text": "@AppleSupport Since updating to 11.1.2, my 5S loses almost one percentage point a minute, even when no apps are running. If I listen to music, I've got about an hour, tops. A text eats up a good 5%. My battery does not need service. When are you releasing a fix? This is madness.",
+      "intent": "battery_power_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.250."
+    },
+    {
+      "customer_text": "@AppleSupport iPhone 6, ios 11.1.2. and i’m not to brave to upgrading, becuse from ios 11 is my iphone slower, and slower as it upgraded.",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.510."
+    },
+    {
+      "customer_text": "Awkward moment in the store when Apple Pay wouldn't allow me to pay. #thanksapple @115858",
+      "intent": "billing_refund",
+      "expected_decision": "escalate",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.377."
+    },
+    {
+      "customer_text": "@AppleSupport Yesterday morning, it freezes then the screen either goes black or back to the home screen. Has turns itself off yesterday and today too 😩",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.538."
+    },
+    {
+      "customer_text": "@338208 @AppleSupport Was this resolved I have the same issue",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.828."
+    },
+    {
+      "customer_text": "@AppleSupport Why do I️ need to do this at all? Can’t you guys release a patch to fix it?",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.513."
+    },
+    {
+      "customer_text": "@AppleSupport my iphone 6s won't update anymore help",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.391."
+    },
+    {
+      "customer_text": "@115858 can y’all fix this please",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 1.000."
+    },
+    {
+      "customer_text": "@AppleSupport I’ve already had someone from Apple try and help and nothings worked. It’s not a big deal, I’m just getting frustrated.",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.314."
+    },
+    {
+      "customer_text": "@AppleSupport haha, thanks, but its all good, i don't need a new update, i can't wait 3 more hours. :) will do it someday else. thanks anyways.",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.450."
+    },
+    {
+      "customer_text": "So apparently there’s some issue with @AppleSupport #HighSierra that makes your #mac easier to hack. I’m being told to avoid this update like the plague.",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.317."
+    },
+    {
+      "customer_text": "Alright @AppleSupport @115858 are y’all gon fix this shit or no?",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.800."
+    },
+    {
+      "customer_text": "@AppleSupport LIKE WHAT IS THIS https://t.co/Q3R8KtQyCU",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 1.000."
+    },
+    {
+      "customer_text": "Whatever happened to @115858 having good customer service. Seriously thinking about what my next device will be. signed #previousfanboy",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.296."
+    },
+    {
+      "customer_text": "Hey @115858  when the hell are you fixing this glitch. I’m tired of seeing I️",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.455."
+    },
+    {
+      "customer_text": "@115858 I’m gonna need you to figure out this bug with the letter I️",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.507."
+    },
+    {
+      "customer_text": "@AppleSupport No it randomly started happening. It will freeze at random times and then I have to restart. The screen will continue playing but the keyboard and trackpad stop working. Power button still works",
+      "intent": "device_hardware_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.300."
+    },
+    {
+      "customer_text": "@AppleSupport @434036 Chat doesn’t work either.. spins and then says “Chat is unavailable at this time, try again later”",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.449."
+    },
+    {
+      "customer_text": "@AppleSupport iOS 11.0.3 has made my 6s slow, laggy and frustrating to use. Battery also drains the battery much faster.",
+      "intent": "battery_power_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.399."
+    },
+    {
+      "customer_text": "@AppleSupport I like the beta. I’m on the latest version. That message comes up all the time",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.466."
+    },
+    {
+      "customer_text": "@AppleSupport что это такое?? Почему это после каждой разблокировки? Стоит 11.2 бета, 6s. Издевательство,будь проклят день когда на 11 встал https://t.co/g38JeU6xDN",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.697."
+    },
+    {
+      "customer_text": "@AppleSupport Yeah thanks for absolutely nothing",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.595."
+    },
+    {
+      "customer_text": "@AppleSupport Ok that worked. How about the sms bug? That causes messages to get stuck below the keyboard. And the fact I can’t attach photos from the photo to sms. Or that my camera constantly freezes up. Don’t know why but can’t see to connect to WiFi anywhere, even at home, my wife can.",
+      "intent": "connectivity_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.246."
+    },
+    {
+      "customer_text": "Alguien sabe que pasa con @AppleSupport actualizar dos iphone y se quemaron! Y ahora actualizo MacBook y no arranca ??? @93688",
+      "intent": "device_hardware_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.477."
+    },
+    {
+      "customer_text": "@115858 been months and I've been trying to update my phone this keeps happening what do I do https://t.co/kV1Mh1dDfm",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.436."
+    },
+    {
+      "customer_text": "@115858 please help! My fathers iPhone 7plus is locked on the apple startup screen, he has done a hard reset, iTunes won’t recognize the phone when plugged in and we can’t get it to work.",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.452."
+    },
+    {
+      "customer_text": "@applesupport - My appleTV’s digital audio out has stopped working. Was fine till decided to update software.",
+      "intent": "app_service_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.333."
+    },
+    {
+      "customer_text": "@AppleSupport I just upgraded to 11.0.3 and top layout is messed up. Suggestions to fix? Already turned on/off. Thx https://t.co/hvYhQJTnlW",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.381."
+    },
+    {
+      "customer_text": "@115858: iOS 11.0.2 is an iPhone killer. Drains battery life at 1%/minute during use - turning it into a landline. When will there be a fix?",
+      "intent": "battery_power_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.347."
+    },
+    {
+      "customer_text": "One more thing. There isn’t an option to show battery percentage. @115858  please fix the above issues.",
+      "intent": "battery_power_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.477."
+    },
+    {
+      "customer_text": "Pq eu n to conseguindo reinstalar apps da App Store???? @AppleSupport #AppStore",
+      "intent": "app_store_purchase",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.506."
+    },
+    {
+      "customer_text": "@AppleSupport ios 11 on iphone 6 is very slow. please fix it",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.591."
+    },
+    {
+      "customer_text": "@AppleSupport bug report Apple Music not showing on lock screen. 11.0.3 6S+. Tried multiple outputs and hard reset. https://t.co/i7zO8EShFM",
+      "intent": "app_service_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.252."
+    },
+    {
+      "customer_text": "@AppleSupport Several times",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 1.000."
+    },
+    {
+      "customer_text": "@115858 how to stop this fuckin Bluetooth from comin on",
+      "intent": "connectivity_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.643."
+    },
+    {
+      "customer_text": "IS ANYONE GONNA TALK ABOUT WHY “I️” KEEPS POPPING UP IN THE KEYBOARD. @115858 FIX THIS ITS DRIVING ME CRAZY",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.511."
+    },
+    {
+      "customer_text": "@AppleSupport It is IOS 11 and an iPhone 8, it seems to just be happening with 1 person",
+      "intent": "app_service_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.532."
+    },
+    {
+      "customer_text": "@115858 @AppleSupport the new update kills my phones battery y’all suck",
+      "intent": "battery_power_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.519."
+    },
+    {
+      "customer_text": "@115858 @AppleSupport @116333 iOS 11.0.3 made my battery life worse. A percent every minute.",
+      "intent": "battery_power_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.534."
+    },
+    {
+      "customer_text": "@115858 y’all got me messed up fr. I AINT PAY MY HARD EARNED MONEY FOR MY PHONE TO BE CRASHING 🙄",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.385."
+    },
+    {
+      "customer_text": "@AppleSupport i️ don’t have wifi.",
+      "intent": "connectivity_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.596."
+    },
+    {
+      "customer_text": "@AppleSupport ios 11.0.3 is performing very bad, slow down the devices, malfunction the apps like whatsapp, google maps, youtube, outlook",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.340."
+    },
+    {
+      "customer_text": "@AppleSupport my ipad camera has had a black screen for a while, where are some places I could have it checked/fixed if anything wrong?",
+      "intent": "device_hardware_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.396."
+    },
+    {
+      "customer_text": "@AppleSupport what the hell?why would I recieve a notification like this on my iPhone saying that they are conducting tests to win ? #alert https://t.co/KD8NZ0FuC4",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.353."
+    },
+    {
+      "customer_text": "This glitch with the iOS 11.1 update is driving me crazy why is it changing “I️” to I️ @AppleSupport",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.497."
+    },
+    {
+      "customer_text": "@AppleSupport @115858 wth is going on with this I️ thing??? Switching to android if y’all don’t fix this soon. We look like idiots out here.",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.447."
+    },
+    {
+      "customer_text": "@AppleSupport And I'm currently on 10.3.3",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.832."
+    },
+    {
+      "customer_text": "I️ will not fix my phone, @115858 you fix my damn phone. https://t.co/aRIl3VOsNi",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.688."
+    },
+    {
+      "customer_text": "My hotspot has not worked since I updated my ipad and iphone to iOS 11 @AppleSupport @ATT @117735",
+      "intent": "connectivity_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.415."
+    },
+    {
+      "customer_text": "@AppleSupport how do i make a service complaint?? Disappointed in my service for my⌚️ repair 😡",
+      "intent": "general_inquiry",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "escalate",
+      "reason": "High-risk issue detected. Matched keyword(s): complaint."
+    },
+    {
+      "customer_text": "The new @115858 iOS update is fucking garbage .. why https://t.co/Ga0NQI5UEI",
+      "intent": "ios_software_issue",
+      "expected_decision": "auto_handle",
+      "predicted_decision": "auto_handle",
+      "reason": "Relevant historical support evidence was found and no high-risk escalation condition was detected. Top similarity: 0.530."
+    }
+  ]
+}

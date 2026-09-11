@@ -1,0 +1,21 @@
+{
+  "examples": 20,
+  "dimensions": {
+    "groundedness": {
+      "exact_agreement": 0.9,
+      "within_one_agreement": 1.0,
+      "quadratic_weighted_kappa": 0.7333
+    },
+    "helpfulness": {
+      "exact_agreement": 0.55,
+      "within_one_agreement": 1.0,
+      "quadratic_weighted_kappa": 0.5588
+    },
+    "hallucination": {
+      "exact_agreement": 1.0,
+      "within_one_agreement": 1.0,
+      "quadratic_weighted_kappa": 1.0
+    }
+  },
+  "note": "Agreement is calculated on the intersection of human review rows and LLM judge rows by customer_tweet_id."
+}

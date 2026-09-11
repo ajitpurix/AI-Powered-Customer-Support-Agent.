@@ -1,0 +1,83 @@
+{
+  "model": "TF-IDF + Linear SVM",
+  "train_examples": 150,
+  "golden_examples": 150,
+  "accuracy": 0.4333,
+  "macro_f1": 0.3368,
+  "weighted_f1": 0.4396,
+  "classification_report": {
+    "app_service_issue": {
+      "precision": 0.3333333333333333,
+      "recall": 0.1,
+      "f1-score": 0.15384615384615385,
+      "support": 10.0
+    },
+    "app_store_purchase": {
+      "precision": 0.16666666666666666,
+      "recall": 0.25,
+      "f1-score": 0.2,
+      "support": 4.0
+    },
+    "apple_id_account": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 4.0
+    },
+    "battery_power_issue": {
+      "precision": 0.7777777777777778,
+      "recall": 0.875,
+      "f1-score": 0.8235294117647058,
+      "support": 16.0
+    },
+    "billing_refund": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    },
+    "connectivity_issue": {
+      "precision": 0.6666666666666666,
+      "recall": 0.2222222222222222,
+      "f1-score": 0.3333333333333333,
+      "support": 9.0
+    },
+    "device_hardware_issue": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 12.0
+    },
+    "general_inquiry": {
+      "precision": 0.22580645161290322,
+      "recall": 0.6363636363636364,
+      "f1-score": 0.3333333333333333,
+      "support": 22.0
+    },
+    "icloud_issue": {
+      "precision": 0.25,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.2857142857142857,
+      "support": 3.0
+    },
+    "ios_software_issue": {
+      "precision": 0.7317073170731707,
+      "recall": 0.46875,
+      "f1-score": 0.5714285714285714,
+      "support": 64.0
+    },
+    "accuracy": 0.43333333333333335,
+    "macro avg": {
+      "precision": 0.4151958213130518,
+      "recall": 0.3385669191919192,
+      "f1-score": 0.33678517560870497,
+      "support": 150.0
+    },
+    "weighted avg": {
+      "precision": 0.5266096978174083,
+      "recall": 0.43333333333333335,
+      "f1-score": 0.4396233570351217,
+      "support": 150.0
+    }
+  }
+}

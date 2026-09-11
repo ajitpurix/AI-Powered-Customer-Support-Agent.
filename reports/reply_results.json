@@ -1,0 +1,715 @@
+{
+  "evaluation_examples": 20,
+  "evidence_found": 20,
+  "evidence_coverage": 1.0,
+  "mean_top_similarity": 0.4814,
+  "generation_modes": {
+    "openai": 0,
+    "local_fallback": 20,
+    "no_evidence": 0
+  },
+  "note": "This evaluation records generated replies and retrieval evidence. Human or LLM quality judging should be performed separately.",
+  "leakage_control": "The current evaluation excludes each query tweet_id from retrieval before ranking.",
+  "examples": [
+    {
+      "customer_tweet_id": "2031565",
+      "customer_text": "Will there be another update @115858 soon? It would be nice if my phone could relay all vowels.",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@502074 Here’s what you can do to work around the issue until it’s fixed in a future software update: https://t.co/xXaXeeSRt9\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "Fucking up my vowels @115858 fix that shit",
+          "reply_text": "@502074 Here’s what you can do to work around the issue until it’s fixed in a future software update: https://t.co/xXaXeeSRt9",
+          "similarity": 0.2878
+        },
+        {
+          "customer_text": "This iOS bug is really annoying @115858  please do something about it soon",
+          "reply_text": "@625083 Please let us know what's going on and we'll be happy to look into it together.",
+          "similarity": 0.2804
+        },
+        {
+          "customer_text": "I keep calling @115858 and as soon as I tell them my problem they hang up. 😡",
+          "reply_text": "@535249 We're here to help. DM us some additional information about what is going on. https://t.co/GDrqU22YpT",
+          "similarity": 0.2749
+        },
+        {
+          "customer_text": "@AppleSupport Yes to all under the SMS relay section",
+          "reply_text": "@123831 Perfect. Next up, let's try restarting your Mac in safe mode to see if the behavior persists: https://t.co/PQ4LSYhUTY",
+          "similarity": 0.2635
+        },
+        {
+          "customer_text": "My iP8+ had screen lock up issues, intermitting Bluetooth, and now it's doing the snap crackle pop w/ 11.0.2. @115858. Nice phone though.",
+          "reply_text": "@174421 We want to help. Send us a DM and we'll go from there. https://t.co/GDrqU22YpT",
+          "similarity": 0.2491
+        }
+      ],
+      "top_similarity": 0.2878,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "1339673",
+      "customer_text": "@AppleSupport Hi, i have problem to download application from the app store. Can you help?",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@666599 We'd love to help! What happens when you try to download the app? Do you get an error message?\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "@AppleSupport Hi i cant download instagram from my app store? HelP",
+          "reply_text": "@666599 We'd love to help! What happens when you try to download the app? Do you get an error message?",
+          "similarity": 0.4067
+        },
+        {
+          "customer_text": "@AppleSupport hi I have a problem with iBooks can you fix it please",
+          "reply_text": "@217617 We'd love to help with iBooks. What seems to be going on?",
+          "similarity": 0.3936
+        },
+        {
+          "customer_text": "@AppleSupport Hey. I’ve an issue that I can’t download any application in my app store. How can I fix it? https://t.co/3NubqNVTRZ",
+          "reply_text": "@742751 Let's help get you back to downloading those applications in your App Store. Is this issue happening over cellular data as well as Wi-Fi? Do you ever get any error message after a certain amount of time waiting? Have you tried restarting your device yet?",
+          "similarity": 0.3797
+        },
+        {
+          "customer_text": "@AppleSupport Hi I still have the problem and no solution found",
+          "reply_text": "@150950 Please meet us in DM to continue working on your case. https://t.co/GDrqU22YpT",
+          "similarity": 0.3411
+        },
+        {
+          "customer_text": "@AppleSupport Hi, I have this same problem. https://t.co/evvqQ73zLD\n Which is really annoying. :(",
+          "reply_text": "@580164 Thank you for that information. We'd like to look further into this to see what's going on. Please DM us the computer type here. https://t.co/GDrqU22YpT",
+          "similarity": 0.3315
+        }
+      ],
+      "top_similarity": 0.4067,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "1575030",
+      "customer_text": "@AppleSupport I like the beta. I’m on the latest version. That message comes up all the time",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@521724 Sounds like your describing notifications.  DM us with the model of your iPhone and we'll continue. https://t.co/GDrqU22YpT\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "@558219 @AppleSupport Like when the message comes in having it say “message” rather than show what it says",
+          "reply_text": "@521724 Sounds like your describing notifications.  DM us with the model of your iPhone and we'll continue. https://t.co/GDrqU22YpT",
+          "similarity": 0.466
+        },
+        {
+          "customer_text": "@AppleSupport No message comes up and it happens on both",
+          "reply_text": "@444064 Could you let us know which Apple device this is occuring on? Is it across multiple devices?",
+          "similarity": 0.4012
+        },
+        {
+          "customer_text": "@AppleSupport I’m on the latest version",
+          "reply_text": "@140657 We'd like to look into this further. Please DM us to continue working on this. https://t.co/GDrqU22YpT",
+          "similarity": 0.3467
+        },
+        {
+          "customer_text": "@AppleSupport The latest one. Version 3",
+          "reply_text": "@371648 Could you Direct Message us and let us know what country you're located in? https://t.co/GDrqU22YpT",
+          "similarity": 0.3467
+        },
+        {
+          "customer_text": "@AppleSupport I have the latest version.",
+          "reply_text": "@681639 Are you listening to music through the Music app or another downloaded app?",
+          "similarity": 0.3467
+        }
+      ],
+      "top_similarity": 0.466,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "2136653",
+      "customer_text": "Good God @AppleSupport I️ need an update",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@662055 We recently released an iOS update, 11.1.1, that contains a fix for autocorrect issues. Let’s be sure to back up your device prior to updating. How to back up: https://t.co/4f8hwT5to6\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "OH MY GOD I️ CANT WITH THE I️ 🤬🤬🤬🤬🤬🤬🤬🤬 @AppleSupport FIX THIS SHIT",
+          "reply_text": "@662055 We recently released an iOS update, 11.1.1, that contains a fix for autocorrect issues. Let’s be sure to back up your device prior to updating. How to back up: https://t.co/4f8hwT5to6",
+          "similarity": 0.4641
+        },
+        {
+          "customer_text": "@AppleSupport i need call me please?",
+          "reply_text": "@653447 We're happy to help and offer support here. Let us know what is going on and we can go from there together.",
+          "similarity": 0.4299
+        },
+        {
+          "customer_text": "@115858 I️ need y’all to get it together with this update",
+          "reply_text": "@474152 Let's look into this together. Reach out to us in a DM to get started. https://t.co/GDrqU22YpT",
+          "similarity": 0.4252
+        },
+        {
+          "customer_text": "Oh. My. God. @AppleSupport. What the fuck is this I️ I️ I️ I️ I️ I️ shit?",
+          "reply_text": "@514860 Here’s what you can do to work around the issue until it’s fixed in a future software update: https://t.co/xXaXeeSRt9",
+          "similarity": 0.4112
+        },
+        {
+          "customer_text": "Need to have an update 🙂💔 @AppleSupport https://t.co/wv67VGojOS",
+          "reply_text": "@699440 We would be happy to help. What's happening with your iPhone here?",
+          "similarity": 0.3765
+        }
+      ],
+      "top_similarity": 0.4641,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "2774298",
+      "customer_text": "Hey @115858! Love my iPhone X.  Some of my apps are crashing.  How long could these apps take to update to your new technology?",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@171977 We're here for you and happy to help. Which device are you experiencing this with? Are you seeing any error messages?\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "Hey @115858 get your shit together all my apps are crashing cause of these updates 🙃🙃🙃🙃",
+          "reply_text": "@171977 We're here for you and happy to help. Which device are you experiencing this with? Are you seeing any error messages?",
+          "similarity": 0.3655
+        },
+        {
+          "customer_text": "FOR THE LOVE OF TECHNOLOGY @115858 PLEASE FIX THIS!!!",
+          "reply_text": "@624959 Here’s what you can do to work around the issue until it’s fixed in a future software update: https://t.co/xXaXeeSRt9 https://t.co/GDrqU22YpT",
+          "similarity": 0.359
+        },
+        {
+          "customer_text": "@AppleSupport my apps keep crashing.",
+          "reply_text": "@311373 We're happy to help. Does this occur with pre-installed apps or 3rd party apps? What's the iOS version installed on your device?",
+          "similarity": 0.3395
+        },
+        {
+          "customer_text": "Why will my apps not update @AppleSupport",
+          "reply_text": "@262091 Keeping apps updated is key on your iPhone, and we want to help. What is happening when you go to App Store &gt; Updates &gt; Update All? Tell us what's happening, and we'll be here to help you.",
+          "similarity": 0.3379
+        },
+        {
+          "customer_text": "@AppleSupport many apps crashing on Ipad.",
+          "reply_text": "@684430 We're happy to help! Have you checked the App Store for updates? Which version of iOS do you have installed on your iPad? Join us in DM, we can look into this further. https://t.co/GDrqU22YpT",
+          "similarity": 0.3149
+        }
+      ],
+      "top_similarity": 0.3655,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "39686",
+      "customer_text": "I can’t send photos any more with the new iOS. Any thoughts @AppleSupport?",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@158703 We'd love to help you get this resolved. Let's team up in DM. https://t.co/GDrqU22YpT\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "Since updating to the latest iOS I can’t send photos via text.  Help @AppleSupport",
+          "reply_text": "@158703 We'd love to help you get this resolved. Let's team up in DM. https://t.co/GDrqU22YpT",
+          "similarity": 0.3213
+        },
+        {
+          "customer_text": "Hey @AppleSupport, I turned on optimize space for my photos, if I send a photos to friends, will they still get the full-resolution photo?",
+          "reply_text": "@511232 Here’s information for how you can download the full resolution images before sending the message: https://t.co/8YUslsnsM5",
+          "similarity": 0.3045
+        },
+        {
+          "customer_text": "@AppleSupport I was trying to send photos to a third party company with their own email domain (?)",
+          "reply_text": "@254308 Let's see if the steps here help you get those attachments added: https://t.co/eQjE0EuD2u If not, join us in DM and we'll take a closer look. https://t.co/GDrqU22YpT",
+          "similarity": 0.2967
+        },
+        {
+          "customer_text": "@AppleSupport @4305 \nCan’t send photos directly from PHOTOs app.Have to open whatsapp and then by adding photos. https://t.co/e22tkNnWeg",
+          "reply_text": "@483176 Let's look into that. Send us a DM and we'll go from there. https://t.co/GDrqU22YpT",
+          "similarity": 0.2665
+        },
+        {
+          "customer_text": "The new iOS is sooooooooooooooooooooooooooooooooooooooooooooooooooooo.Slooooooooooooooooooooooooooooooooooooooow!!!! @AppleSupport @115858",
+          "reply_text": "@602997 We'd like to know more to assist. What's the exact iOS running? Let us know in a DM and we'll continue. https://t.co/GDrqU22YpT",
+          "similarity": 0.2568
+        }
+      ],
+      "top_similarity": 0.3213,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "2510983",
+      "customer_text": "@AppleSupport Can you tell me what this SpringBoard is and why it’s using mobile data? https://t.co/kjwv0MbJAy",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@458099 Hi there. You'd have to be connected to Wi-Fi to perform an update over-the-air. Learn more here: https://t.co/80YRnjDFDk\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "@AppleSupport can i update from ios 10 to 11 using mobile data?",
+          "reply_text": "@458099 Hi there. You'd have to be connected to Wi-Fi to perform an update over-the-air. Learn more here: https://t.co/80YRnjDFDk",
+          "similarity": 0.4905
+        },
+        {
+          "customer_text": "@AppleSupport There’s an icon on my mobile data with no picture called springboard. don’t know what it is and it’s using data. Please help.",
+          "reply_text": "@434682 We'd be happy to provide you with some information that can help with this. To start, reach out to us in DM. https://t.co/GDrqU22YpT",
+          "similarity": 0.3855
+        },
+        {
+          "customer_text": "Wireless straight up doesn’t work on snapchat either for some reason. I can only load shit using mobile data. Wtf is this shit @AppleSupport",
+          "reply_text": "@392257 We’ve got you covered. Which device and version of iOS are you using? Are your apps all up-to-date?",
+          "similarity": 0.3766
+        },
+        {
+          "customer_text": "@AppleSupport I am not able to use WhatsApp on mobile data ,WhatsApp is not showing in mobile data column in settings",
+          "reply_text": "@272719 We've received your DMs and we'll continue there.",
+          "similarity": 0.3596
+        },
+        {
+          "customer_text": "After upgrading to iOS 11 the battery drains really fast when using mobile data while travelling. Never seen such issues before. @AppleSupport @115858",
+          "reply_text": "@245900 We'd love to help! We know how important the battery is for your iPhone. Are you using a specific app when this happens? DM us. https://t.co/GDrqU22YpT",
+          "similarity": 0.3485
+        }
+      ],
+      "top_similarity": 0.4905,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "1921884",
+      "customer_text": "@AppleSupport my ipad camera has had a black screen for a while, where are some places I could have it checked/fixed if anything wrong?",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@296929 If you have an iPad 2 then the device would not be able to update to iOS 11 and would currently be up to date.\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "@AppleSupport I have the iPad 2",
+          "reply_text": "@296929 If you have an iPad 2 then the device would not be able to update to iOS 11 and would currently be up to date.",
+          "similarity": 0.3962
+        },
+        {
+          "customer_text": "@AppleSupport With my iPad",
+          "reply_text": "@421464 Do you receive an alert that your accessory isn't supported? Also, what's the iOS version of the iPad?",
+          "similarity": 0.3962
+        },
+        {
+          "customer_text": "@AppleSupport My ipad",
+          "reply_text": "@292886 Try the steps in this article for a lost or stolen iPad: https://t.co/fUoKdx4Yut",
+          "similarity": 0.3962
+        },
+        {
+          "customer_text": "Can @AppleSupport help me please as I have a black screen!!",
+          "reply_text": "@396127 We want to help you with this. Which device has a black screen?",
+          "similarity": 0.3884
+        },
+        {
+          "customer_text": "@AppleSupport iPhone7 Plus forward  camera black screen in portrait modes. I’m in Nigeria at moment can’t take it back to Pittsburgh.",
+          "reply_text": "@287895 Is iOS 11.0.2 installed? If yes, please follow the steps under 'You see a closed lens or black screen' here: https://t.co/r1DRfaFLIU",
+          "similarity": 0.3727
+        }
+      ],
+      "top_similarity": 0.3962,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "2304557",
+      "customer_text": "@AppleSupport I’m trying to send pictures via iMessage after the newest update but none of my photos will fully download from iCloud? It says “unable to share” and that there was an error. Could you help me sort out the problem please?",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@248711 Let's see how we can help over Twitter. Which device model do you have and is iOS 11.0.3 installed? Any steps tried so far?\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "@AppleSupport Trying to send a pic from photos to iMessage and it locks up. I hate this newest update!",
+          "reply_text": "@248711 Let's see how we can help over Twitter. Which device model do you have and is iOS 11.0.3 installed? Any steps tried so far?",
+          "similarity": 0.3238
+        },
+        {
+          "customer_text": "@AppleSupport iOS 11.0.2 -Share Extension in Photos no longer shows iMessage. You can't send pictures to iMessage from Photos Apps any more?",
+          "reply_text": "@160179 Great question, our Photos experts can assist you with this. Click here to get started: https://t.co/IBIY3vMgPj",
+          "similarity": 0.2445
+        },
+        {
+          "customer_text": "@AppleSupport I’m trying to update my iTunes but keep getting this error. Could you help? https://t.co/IMmkc9fSX0",
+          "reply_text": "@814246 Absolutely. Help is here. Check out this link to get this resolved:  https://t.co/KsXnANVRUK Let us know if that does the trick to get iTunes updated and installed.",
+          "similarity": 0.222
+        },
+        {
+          "customer_text": "Hey @115858 thanks to your newest update all of my photos from the past 3 years are now gone so thank you for that :-)",
+          "reply_text": "@309937 That is not the experience we want you to have. Which iPhone model do you own?",
+          "similarity": 0.2195
+        },
+        {
+          "customer_text": "@AppleSupport I was trying to send photos to a third party company with their own email domain (?)",
+          "reply_text": "@254308 Let's see if the steps here help you get those attachments added: https://t.co/eQjE0EuD2u If not, join us in DM and we'll take a closer look. https://t.co/GDrqU22YpT",
+          "similarity": 0.2192
+        }
+      ],
+      "top_similarity": 0.3238,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "1397341",
+      "customer_text": "@AppleSupport Thanks for your prompt respond, i manage to update my device. However, i still find sometimes whenever i click, i hardly fire up the apps.",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@632737 You're welcome.\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "@AppleSupport Thanks for the prompt feedback!",
+          "reply_text": "@632737 You're welcome.",
+          "similarity": 0.4838
+        },
+        {
+          "customer_text": "@AppleSupport Thanks for your help and thanks for being so prompt with me too😀",
+          "reply_text": "@136100 You're very welcome. Have a great evening!",
+          "similarity": 0.4267
+        },
+        {
+          "customer_text": "@AppleSupport I will, thanks for the prompt reply.",
+          "reply_text": "@368141 You're very welcome. We look forward to working with you. https://t.co/GDrqU22YpT",
+          "similarity": 0.4196
+        },
+        {
+          "customer_text": "@AppleSupport Thanks for the prompt action(releasing iOS 11.2). Everything’s okay now. 😇",
+          "reply_text": "@241077 Thanks for the update and we're glad that everything is working as it should. Feel free to reach out if you need anything else.",
+          "similarity": 0.3472
+        },
+        {
+          "customer_text": "Hey @115858 thanks for forcing my old phone to update. Hardly any of my apps are functional anymore.",
+          "reply_text": "@430738 You've reached the right place. We can definitely work with you to resolve this. Which model device and iOS do you have?",
+          "similarity": 0.3079
+        }
+      ],
+      "top_similarity": 0.4838,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "2282184",
+      "customer_text": "Alright @AppleSupport @115858 are y’all gon fix this shit or no?",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@646756 An update has been released to assist with this issue. If you haven’t yet, please back up your device and update it to iOS 11.1.1. For more info, check out: https://t.co/4f8hwT5to6 DM us with any questions. https://t.co/GDrqU22YpT\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "So @115858 you gon fix this “I️” shit or what?",
+          "reply_text": "@646756 An update has been released to assist with this issue. If you haven’t yet, please back up your device and update it to iOS 11.1.1. For more info, check out: https://t.co/4f8hwT5to6 DM us with any questions. https://t.co/GDrqU22YpT",
+          "similarity": 0.7995
+        },
+        {
+          "customer_text": "@115858 when y’all gon fix this “l” shit?",
+          "reply_text": "@234002 We released iOS 11.1.1 to help assist with this autocorrect issue. Have you had a chance to update yet? If not, go ahead and create a backup first, then update your iOS. Let us know if that fixes it.",
+          "similarity": 0.7995
+        },
+        {
+          "customer_text": "@115858 you gon fix the glitch on”I️” or no?",
+          "reply_text": "@584844 We want to help. Send us a DM letting us know your iOS version. You can check in Settings &gt; General &gt; About. https://t.co/GDrqU22YpT",
+          "similarity": 0.6574
+        },
+        {
+          "customer_text": "@115858 when y’all gon fix this “I️” glitch!",
+          "reply_text": "@644935 An update has been released to assist with this issue. If you haven’t yet, please back up your device and update it to the latest version iOS 11.1.1. For more info, check out: https://t.co/xXaXeeSRt9",
+          "similarity": 0.6574
+        },
+        {
+          "customer_text": "@115858 see... see.... this is what we NOT gon do. Fix this shit right now!! https://t.co/kB11KYE7jr",
+          "reply_text": "@500180 This is certainly not the behavior we want you to experience. Could you tell us which iPhone and iOS version you're using?",
+          "similarity": 0.6252
+        }
+      ],
+      "top_similarity": 0.7995,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "1410770",
+      "customer_text": "@AppleSupport I connected it after restarting my iPhone twice, but it did not get better. My lightning cable is new one.",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@520092 Got it. Does your iPhone battery deplete while it is connected to the charger like this?\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "@AppleSupport Only an lightning cable",
+          "reply_text": "@520092 Got it. Does your iPhone battery deplete while it is connected to the charger like this?",
+          "similarity": 0.41
+        },
+        {
+          "customer_text": "@AppleSupport IPhone 6s with an apple lightning cable",
+          "reply_text": "@808827 Got it. Do you connect the cable to a wall adapter, or do you use a USB port on a computer? DM us and let us know. https://t.co/GDrqU22YpT",
+          "similarity": 0.374
+        },
+        {
+          "customer_text": "@AppleSupport Not connected in that way.",
+          "reply_text": "@677844 Were your contacts only stored on your iPhone?",
+          "similarity": 0.3543
+        },
+        {
+          "customer_text": "Dear @AppleSupport,, Any idea how to clean my lightning cable corrosion?",
+          "reply_text": "@695092 We'd like to help. Let's meet in DM to come up with a game plan. https://t.co/GDrqU22YpT",
+          "similarity": 0.342
+        },
+        {
+          "customer_text": "@AppleSupport I do but not connected at the same time. I have an iPhone 7",
+          "reply_text": "@235357 OK and when you go to Settings &gt; Bluetooth to try to connect to your devices, what is the issue? Is it not finding the devices at all? Finding them but giving an error when trying to connect? etc.",
+          "similarity": 0.3066
+        }
+      ],
+      "top_similarity": 0.41,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "2296308",
+      "customer_text": "@115948 @115858 @AppleSupport",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@535810 Thanks for the video. We'd like some details to help. Send us a DM using the link below and we'll continue. https://t.co/GDrqU22YpT\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "@115948 @115858 @AppleSupport https://t.co/otqpRfPYCG",
+          "reply_text": "@535810 Thanks for the video. We'd like some details to help. Send us a DM using the link below and we'll continue. https://t.co/GDrqU22YpT",
+          "similarity": 0.8926
+        },
+        {
+          "customer_text": "@115948 @115858 @AppleSupport https://t.co/UdVosSYrCc",
+          "reply_text": "@703037 We love hearing from our customers, that's how we improve our products. We welcome feedback here: https://t.co/eTPVYVFyd8",
+          "similarity": 0.8926
+        },
+        {
+          "customer_text": "@115948 @AppleSupport @115948 @115858 @AppleSupport https://t.co/q2jEIYi6Ut",
+          "reply_text": "@292787 We'd be happy to look into this with you!  To begin, can you tell us if you're an Apple Music subscriber?",
+          "similarity": 0.7414
+        },
+        {
+          "customer_text": "FIX IT!!!!! @115858 @AppleSupport @115948 @115858 https://t.co/fs6DB8mcfF",
+          "reply_text": "@660532 We're happy to help. When the music pauses, do you have to manually start it again? Let us know to continue.",
+          "similarity": 0.6871
+        },
+        {
+          "customer_text": "@115948 @115858 @AppleSupport @115948 like can i get a refund????",
+          "reply_text": "@686587 We want to help get your Apple Music working as expected. Restart your iPhone and try accessing this music again. If it doesn't work, let us know if this is happening to all music and if it happens on both Wi-Fi and cellular data.",
+          "similarity": 0.5811
+        }
+      ],
+      "top_similarity": 0.8926,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "1552181",
+      "customer_text": "I updated my phone and I️ still get that box instead of the letter “I️” What the fuck is up @AppleSupport ???",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@628687 Here’s what you can do to work around the issue until it’s fixed in a future software update: https://t.co/xXaXeeSRt9\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "What the fuck @AppleSupport",
+          "reply_text": "@628687 Here’s what you can do to work around the issue until it’s fixed in a future software update: https://t.co/xXaXeeSRt9",
+          "similarity": 0.4134
+        },
+        {
+          "customer_text": "Ok seriously how long do we have to have the stupid symbols instead of the letter I️? \nWhat the fuck @115858???",
+          "reply_text": "@628533 Here’s what you can do to work around the issue until it’s fixed in a future software update: https://t.co/qODbOsp4wz",
+          "similarity": 0.3871
+        },
+        {
+          "customer_text": "@115858 what’s up with this I️ issue??? It shows up at a question mark inside a box instead of he letter I️",
+          "reply_text": "@163657 Thanks for contacting us. Send us a DM and we'll go from there. https://t.co/GDrqU22YpT",
+          "similarity": 0.3863
+        },
+        {
+          "customer_text": "Now I️ can’t type the letter I️. Fuck y’all @115858 get it together",
+          "reply_text": "@477291 Thanks for letting us know. We've got a great article here addressing this: https://t.co/xU1AGHStV6",
+          "similarity": 0.3841
+        },
+        {
+          "customer_text": "@AppleSupport with this new update, typing “ I️ “ shows a question mark in a box instead of the letter my guy",
+          "reply_text": "@462801 Thanks for reaching out. Please DM us about the issue you're experiencing and we'll continue there. https://t.co/GDrqU22YpT",
+          "similarity": 0.3812
+        }
+      ],
+      "top_similarity": 0.4134,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "977654",
+      "customer_text": "@AppleSupport can you advise if this is fake? https://t.co/HURnabdVCf",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@771861 That doesn't appear to be from us. Here's help on how to avoid phishing emails: https://t.co/V2QRdtocGo\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "@AppleSupport how fake is this? https://t.co/FqgmTPJwyI",
+          "reply_text": "@771861 That doesn't appear to be from us. Here's help on how to avoid phishing emails: https://t.co/V2QRdtocGo",
+          "similarity": 0.5773
+        },
+        {
+          "customer_text": "@AppleSupport is this a fake? https://t.co/gTyAzi2wZ4",
+          "reply_text": "@766824 Good question. For help with identifying and reporting emails like this, check out this web page: https://t.co/yGvlh3cZ5Y",
+          "similarity": 0.5773
+        },
+        {
+          "customer_text": "@AppleSupport Is this fake?? https://t.co/mb8Z9nP3pn",
+          "reply_text": "@402734 That is likely a phishing email. To learn more about phishing, &amp; how to report it, check out this link: \nhttps://t.co/6Ye6EtSytB",
+          "similarity": 0.5773
+        },
+        {
+          "customer_text": "@AppleSupport fake. https://t.co/ULxupKOIdS",
+          "reply_text": "@400223 You're right, good catch. Learn how to spot phishing attempts and report them here: https://t.co/LNMCdqt6fD",
+          "similarity": 0.5773
+        },
+        {
+          "customer_text": "@AppleSupport is this actually from you or a fake?? https://t.co/8giAbCsyVO",
+          "reply_text": "@323928 We certainly understand your concern and will be happy to look into this with you further. Go ahead and meet us in DM: https://t.co/GDrqU22YpT",
+          "similarity": 0.5635
+        }
+      ],
+      "top_similarity": 0.5773,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "755743",
+      "customer_text": "@AppleSupport The steps show me how to delete the profile, which I already did. It’s still showing an update for beta",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@334936 Which device are you using? How often do you have to charge?\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "@AppleSupport I had done these steps before,no signs of improvments",
+          "reply_text": "@334936 Which device are you using? How often do you have to charge?",
+          "similarity": 0.4361
+        },
+        {
+          "customer_text": "@AppleSupport i do the all steps still same problem",
+          "reply_text": "@739269 Thanks for trying those steps. We'd be happy to look into this with you further. DM us using the link below and we'll go from there. https://t.co/GDrqU22YpT",
+          "similarity": 0.3948
+        },
+        {
+          "customer_text": "@AppleSupport can you give me steps to downgrade from beta iOS to regular/public iOS? forgot how to do it",
+          "reply_text": "@379407 Absolutely.  You can learn more about the beta software here: https://t.co/rEEDcjXdhp  This article includes information on how to move from beta to public iOS versions.",
+          "similarity": 0.3732
+        },
+        {
+          "customer_text": "@AppleSupport No, it just isn’t showing the update.",
+          "reply_text": "@758993 Let's move over to DM to continue troubleshooting. https://t.co/GDrqU22YpT",
+          "similarity": 0.345
+        },
+        {
+          "customer_text": "After enrolling for @115858 beta programme, it’s constantly showing Update software.. when it’s already updated",
+          "reply_text": "@511495 Let’s investigate this together. Use the link below to DM us, and we’ll take it from there. https://t.co/GDrqU22YpT",
+          "similarity": 0.3235
+        }
+      ],
+      "top_similarity": 0.4361,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "1584602",
+      "customer_text": "@AppleSupport Why do I️ need to do this at all? Can’t you guys release a patch to fix it?",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@523749 Here’s what you can do to work around the issue until it’s fixed in a future software update: https://t.co/xXaXeeSRt9\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "Why can’t @115858 just release a patch to fix this fucking I️ problem...?",
+          "reply_text": "@523749 Here’s what you can do to work around the issue until it’s fixed in a future software update: https://t.co/xXaXeeSRt9",
+          "similarity": 0.5133
+        },
+        {
+          "customer_text": "@AppleSupport when will you guys release the latest update for #PoGo??",
+          "reply_text": "@485571 Regarding updates for third party apps, we recommend reaching out to the app developer directly for assistance.",
+          "similarity": 0.4043
+        },
+        {
+          "customer_text": "@115858 when are we getting a patch to fix this “I️” issue????",
+          "reply_text": "@621679 Here’s what you can do to work around the issue until it’s fixed in a future software update: https://t.co/xXaXeeSRt9",
+          "similarity": 0.3977
+        },
+        {
+          "customer_text": "@AppleSupport i need call me please?",
+          "reply_text": "@653447 We're happy to help and offer support here. Let us know what is going on and we can go from there together.",
+          "similarity": 0.3094
+        },
+        {
+          "customer_text": "I * ugh!!! Come on @AppleSupport I need you guys to fix this I️, like asap!",
+          "reply_text": "@658429  Let's look into this for you. iOS 11.1.1 was recently released and it includes a fix for autocorrect issues. Be sure to back up your device prior to updating, How to back up: https://t.co/4f8hwT5to6 DM us if you run into any issues. https://t.co/GDrqU22YpT",
+          "similarity": 0.2984
+        }
+      ],
+      "top_similarity": 0.5133,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "486291",
+      "customer_text": "@AppleSupport 11.1.2 and the screen flashes black and turns off music or whatever I have going on then the lock screen comes on https://t.co/9uTLFgN2HC",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@249115 We're glad you got it resolved!\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "@AppleSupport Screen was going black for a while and then going to lock screen. Think ok now after installing 11.2",
+          "reply_text": "@249115 We're glad you got it resolved!",
+          "similarity": 0.2942
+        },
+        {
+          "customer_text": "@AppleSupport 11.0.2. My screen even freezes up sometime",
+          "reply_text": "@340073 We'd like to know a little more about the issues you're experiencing. DM and we'll go from there.",
+          "similarity": 0.2745
+        },
+        {
+          "customer_text": "@AppleSupport IPhone keeps going to lock screen every few minutes. Blank screen with circle shows up, then goes to lock screen...",
+          "reply_text": "@246762 We know you rely on your iPhone and we're happy to help! Please check out the following article: https://t.co/osZOKKTalm If you need to update the iOS be sure to create a backup before beginning. DM us if you have additional questions. https://t.co/GDrqU22YpT",
+          "similarity": 0.2677
+        },
+        {
+          "customer_text": "@AppleSupport Thanks! So when I’m typing this is what comes up https://t.co/vJTAoIAP56",
+          "reply_text": "@585965 Thank you for reaching out to us. We want to help. In DM, please let us know which iOS version you're using. https://t.co/GDrqU22YpT",
+          "similarity": 0.2591
+        },
+        {
+          "customer_text": "@AppleSupport This is what comes up https://t.co/mHaTeskqt9",
+          "reply_text": "@408101 Thanks for the screenshot. You'll need to contact our account specialists using this link for more help:  https://t.co/UJm15vEnDA",
+          "similarity": 0.2573
+        }
+      ],
+      "top_similarity": 0.2942,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "2700945",
+      "customer_text": "@AppleSupport terrible battery life cos of your ios 11 &amp; following updates!u still haven’t rectified the common complaint, moving to Android",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@167319 Let's take a closer look together. Please DM us and we can go from there. https://t.co/GDrqU22YpT\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "@AppleSupport - iOS 11 &amp; .1 terrible! Battery life drops quicker than pound did after Brexit referendum! &amp; it crashes more than bumper cars!",
+          "reply_text": "@167319 Let's take a closer look together. Please DM us and we can go from there. https://t.co/GDrqU22YpT",
+          "similarity": 0.2856
+        },
+        {
+          "customer_text": "@AppleSupport IOS 11 is terrible to my battery",
+          "reply_text": "@186010 We'd like to look into the issue that you're experiencing with your battery. Click here to join us in DM: https://t.co/GDrqU2kzhr",
+          "similarity": 0.2645
+        },
+        {
+          "customer_text": "@AppleSupport IOS 11 1.2. Yes, even if I use the headphone adapter, it still happens. Is this a common complaint?",
+          "reply_text": "@231641 Which apps are experiencing unresponsiveness? Also, how do you restore functionality with those apps? Please DM us the answers. https://t.co/GDrqU22YpT",
+          "similarity": 0.2568
+        },
+        {
+          "customer_text": "@AppleSupport All of these tips had already been used. Still terrible battery life!",
+          "reply_text": "@268755 Thanks for giving those tips a shot. Send us a DM with the country you're currently located in, and we'll continue from there. https://t.co/GDrqU22YpT",
+          "similarity": 0.2531
+        },
+        {
+          "customer_text": "@AppleSupport terrible battery life on iOS 11.1.2. Call rejection issues where incoming calls are cancelled and heard as ‘switched off’ on the other end. I wish there was a jailbreak to downgrade to iOS 10.3.",
+          "reply_text": "@286884 We're overjoyed to work together and get to the bottom of what's going on. We can handle each issue one at a time. Let's start with the battery. How many times a day are you charging your iPhone? Please DM us at the link below. https://t.co/GDrqU22YpT",
+          "similarity": 0.2525
+        }
+      ],
+      "top_similarity": 0.2856,
+      "evidence_found": true
+    },
+    {
+      "customer_tweet_id": "2964189",
+      "customer_text": "@AppleSupport Several times",
+      "generated_reply": "Thanks for reaching out. Based on similar support cases, the recommended guidance is:\n\n@558352 Have you noticed a similar issue with any other devices?\n\nIf this does not resolve the issue, the case should be reviewed by a support agent.",
+      "generation_mode": "local_fallback",
+      "evidence": [
+        {
+          "customer_text": "@AppleSupport Done that 3 times already",
+          "reply_text": "@558352 Have you noticed a similar issue with any other devices?",
+          "similarity": 1.0
+        },
+        {
+          "customer_text": "@AppleSupport Already done many times!",
+          "reply_text": "@370628 Great, what other troubleshooting have you already tried?",
+          "similarity": 1.0
+        },
+        {
+          "customer_text": "@AppleSupport I have a few times yes",
+          "reply_text": "@204465 Okay! Send us a DM, letting us know which iOS version is currently shown in the Settings app &gt; General &gt; About. https://t.co/GDrqU22YpT",
+          "similarity": 0.9046
+        },
+        {
+          "customer_text": "@AppleSupport two times. USA",
+          "reply_text": "@142505 We received your DM and will continue with you there.",
+          "similarity": 0.7785
+        },
+        {
+          "customer_text": "@AppleSupport then other times it does show up 2/2",
+          "reply_text": "@140191 Let's look into this together to see what's going on. Send us a DM and we'll go from there. https://t.co/GDrqU22YpT",
+          "similarity": 0.6733
+        }
+      ],
+      "top_similarity": 1.0,
+      "evidence_found": true
+    }
+  ]
+}

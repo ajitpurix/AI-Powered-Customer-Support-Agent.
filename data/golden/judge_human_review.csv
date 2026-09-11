@@ -1,0 +1,101 @@
+customer_tweet_id,customer_text,generated_reply,top_evidence_reply,groundedness,helpfulness,hallucination,reviewer_notes
+2031565,Will there be another update @115858 soon? It would be nice if my phone could relay all vowels.,"Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@502074 Here’s what you can do to work around the issue until it’s fixed in a future software update: https://t.co/xXaXeeSRt9
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@502074 Here’s what you can do to work around the issue until it’s fixed in a future software update: https://t.co/xXaXeeSRt9,4,3,4,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+1339673,"@AppleSupport Hi, i have problem to download application from the app store. Can you help?","Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@666599 We'd love to help! What happens when you try to download the app? Do you get an error message?
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@666599 We'd love to help! What happens when you try to download the app? Do you get an error message?,5,4,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+1575030,@AppleSupport I like the beta. I’m on the latest version. That message comes up all the time,"Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@521724 Sounds like your describing notifications.  DM us with the model of your iPhone and we'll continue. https://t.co/GDrqU22YpT
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@521724 Sounds like your describing notifications.  DM us with the model of your iPhone and we'll continue. https://t.co/GDrqU22YpT,4,2,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+2136653,Good God @AppleSupport I️ need an update,"Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@662055 We recently released an iOS update, 11.1.1, that contains a fix for autocorrect issues. Let’s be sure to back up your device prior to updating. How to back up: https://t.co/4f8hwT5to6
+
+If this does not resolve the issue, the case should be reviewed by a support agent.","@662055 We recently released an iOS update, 11.1.1, that contains a fix for autocorrect issues. Let’s be sure to back up your device prior to updating. How to back up: https://t.co/4f8hwT5to6",5,4,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+2774298,Hey @115858! Love my iPhone X.  Some of my apps are crashing.  How long could these apps take to update to your new technology?,"Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@171977 We're here for you and happy to help. Which device are you experiencing this with? Are you seeing any error messages?
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@171977 We're here for you and happy to help. Which device are you experiencing this with? Are you seeing any error messages?,5,4,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+39686,I can’t send photos any more with the new iOS. Any thoughts @AppleSupport?,"Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@158703 We'd love to help you get this resolved. Let's team up in DM. https://t.co/GDrqU22YpT
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@158703 We'd love to help you get this resolved. Let's team up in DM. https://t.co/GDrqU22YpT,4,3,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+2510983,@AppleSupport Can you tell me what this SpringBoard is and why it’s using mobile data? https://t.co/kjwv0MbJAy,"Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@458099 Hi there. You'd have to be connected to Wi-Fi to perform an update over-the-air. Learn more here: https://t.co/80YRnjDFDk
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@458099 Hi there. You'd have to be connected to Wi-Fi to perform an update over-the-air. Learn more here: https://t.co/80YRnjDFDk,5,2,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+1921884,"@AppleSupport my ipad camera has had a black screen for a while, where are some places I could have it checked/fixed if anything wrong?","Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@296929 If you have an iPad 2 then the device would not be able to update to iOS 11 and would currently be up to date.
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@296929 If you have an iPad 2 then the device would not be able to update to iOS 11 and would currently be up to date.,5,3,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+2304557,@AppleSupport I’m trying to send pictures via iMessage after the newest update but none of my photos will fully download from iCloud? It says “unable to share” and that there was an error. Could you help me sort out the problem please?,"Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@248711 Let's see how we can help over Twitter. Which device model do you have and is iOS 11.0.3 installed? Any steps tried so far?
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@248711 Let's see how we can help over Twitter. Which device model do you have and is iOS 11.0.3 installed? Any steps tried so far?,5,4,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+1397341,"@AppleSupport Thanks for your prompt respond, i manage to update my device. However, i still find sometimes whenever i click, i hardly fire up the apps.","Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@632737 You're welcome.
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@632737 You're welcome.,5,2,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+2282184,Alright @AppleSupport @115858 are y’all gon fix this shit or no?,"Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@646756 An update has been released to assist with this issue. If you haven’t yet, please back up your device and update it to iOS 11.1.1. For more info, check out: https://t.co/4f8hwT5to6 DM us with any questions. https://t.co/GDrqU22YpT
+
+If this does not resolve the issue, the case should be reviewed by a support agent.","@646756 An update has been released to assist with this issue. If you haven’t yet, please back up your device and update it to iOS 11.1.1. For more info, check out: https://t.co/4f8hwT5to6 DM us with any questions. https://t.co/GDrqU22YpT",5,4,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+1410770,"@AppleSupport I connected it after restarting my iPhone twice, but it did not get better. My lightning cable is new one.","Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@520092 Got it. Does your iPhone battery deplete while it is connected to the charger like this?
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@520092 Got it. Does your iPhone battery deplete while it is connected to the charger like this?,5,3,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+2296308,@115948 @115858 @AppleSupport,"Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@535810 Thanks for the video. We'd like some details to help. Send us a DM using the link below and we'll continue. https://t.co/GDrqU22YpT
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@535810 Thanks for the video. We'd like some details to help. Send us a DM using the link below and we'll continue. https://t.co/GDrqU22YpT,5,3,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+1552181,I updated my phone and I️ still get that box instead of the letter “I️” What the fuck is up @AppleSupport ???,"Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@628687 Here’s what you can do to work around the issue until it’s fixed in a future software update: https://t.co/xXaXeeSRt9
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@628687 Here’s what you can do to work around the issue until it’s fixed in a future software update: https://t.co/xXaXeeSRt9,5,3,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+977654,@AppleSupport can you advise if this is fake? https://t.co/HURnabdVCf,"Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@771861 That doesn't appear to be from us. Here's help on how to avoid phishing emails: https://t.co/V2QRdtocGo
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@771861 That doesn't appear to be from us. Here's help on how to avoid phishing emails: https://t.co/V2QRdtocGo,5,4,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+755743,"@AppleSupport The steps show me how to delete the profile, which I already did. It’s still showing an update for beta","Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@334936 Which device are you using? How often do you have to charge?
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@334936 Which device are you using? How often do you have to charge?,5,3,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+1584602,@AppleSupport Why do I️ need to do this at all? Can’t you guys release a patch to fix it?,"Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@523749 Here’s what you can do to work around the issue until it’s fixed in a future software update: https://t.co/xXaXeeSRt9
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@523749 Here’s what you can do to work around the issue until it’s fixed in a future software update: https://t.co/xXaXeeSRt9,5,4,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+486291,@AppleSupport 11.1.2 and the screen flashes black and turns off music or whatever I have going on then the lock screen comes on https://t.co/9uTLFgN2HC,"Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@249115 We're glad you got it resolved!
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@249115 We're glad you got it resolved!,4,2,4,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+2700945,"@AppleSupport terrible battery life cos of your ios 11 &amp; following updates!u still haven’t rectified the common complaint, moving to Android","Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@167319 Let's take a closer look together. Please DM us and we can go from there. https://t.co/GDrqU22YpT
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@167319 Let's take a closer look together. Please DM us and we can go from there. https://t.co/GDrqU22YpT,4,2,4,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."
+2964189,@AppleSupport Several times,"Thanks for reaching out. Based on similar support cases, the recommended guidance is:
+
+@558352 Have you noticed a similar issue with any other devices?
+
+If this does not resolve the issue, the case should be reviewed by a support agent.",@558352 Have you noticed a similar issue with any other devices?,5,4,5,"Author review on the same 1-5 rubric: groundedness checks support from evidence, helpfulness checks issue fit, and hallucination checks unsupported claims."

@@ -1,0 +1,12 @@
+{
+  "majority_baseline": {
+    "accuracy": 0.3867,
+    "macro_f1": 0.0558,
+    "weighted_f1": 0.2156
+  },
+  "tfidf_logistic_regression": {
+    "accuracy": 0.6267,
+    "macro_f1": 0.2893,
+    "weighted_f1": 0.5936
+  }
+}

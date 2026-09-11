@@ -1,0 +1,11 @@
+intent,definition
+ios_software_issue,Problems with iOS updates system software crashes freezes glitches or built-in system features
+battery_power_issue,Battery drain charging overheating power or battery health problems
+device_hardware_issue,Problems with the physical device such as screen buttons speaker camera or other hardware
+connectivity_issue,WiFi Bluetooth cellular VPN or other network and connectivity problems
+apple_id_account,Apple ID login password verification account access or account management problems
+icloud_issue,iCloud storage backup syncing Photos or other iCloud problems
+app_service_issue,Problems with Apple apps or services such as Music Podcasts Weather or Screen Recording
+app_store_purchase,App Store downloads app installations or app purchases
+billing_refund,Unexpected charges billing questions refunds or money-back requests
+general_inquiry,General Apple questions feedback or requests that do not fit another category

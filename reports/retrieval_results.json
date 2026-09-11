@@ -1,0 +1,9 @@
+{
+  "retriever": "TF-IDF cosine similarity",
+  "golden_examples": 150,
+  "retrieval_coverage": 1.0,
+  "top3_coverage": 1.0,
+  "top5_coverage": 0.9867,
+  "mean_top_similarity": 0.4837,
+  "leakage_control": "The query tweet_id is excluded from the retrieval index before ranking, so golden examples cannot retrieve the exact same row as evidence."
+}
